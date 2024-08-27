@@ -1,0 +1,105 @@
+body {
+    background-color: #1a1a2e; /* Dark navy blue background */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 81px);
+    grid-template-rows: repeat(5, 81px);
+    gap: 6px;
+    justify-content: center;
+    color: #e0e0e0;
+}
+
+.title {
+    color: #f5a623; /* Warm orange title color */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* for grid and players  */
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #162447; /* Darker navy blue grid background */
+    border: 1px solid #e0e0e0;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.player-A {
+    background-color: #53354a; /* Muted purple color for Player A */
+}
+
+.player-A:hover {
+    background-color: #f67280; /* Bright coral color on hover */
+    color: black;
+}
+
+.player-B {
+    background-color: #464866; /* Slate blue color for Player B */
+}
+
+.player-B:hover,
+#moveOptions button:hover {
+    background-color: #f5a623; /* Warm orange on hover */
+    color: black;
+}
+
+#selectedMove {
+    font-size: 1em;
+}
+
+#playerTurn {
+    background-color: #333; /* Dark background for contrast */
+    color: #f5a623; /* Warm orange text color */
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 20px; /* Add padding around the text */
+    border-radius: 8px; /* Round the corners */
+    border: 2px solid #f5a623; /* Warm orange border */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for better visibility */
+    margin: 10px; /* Add margin around the element */
+}
+
+
+#moveHistory {
+    margin-top: 20px;
+}
+
+#moveHistory ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#moveHistory li {
+    margin: 5px 0;
+}
+
+#moveOptions button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Highlight the selected cell */
+.selected-cell {
+    outline: 3px solid #f5a623; /* Warm orange outline for selected cells */
+}
+
+/* game rules */
+
+.gameRules {
+    background-color: #0f3460; /* Dark navy blue background for rules */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #e0e0e0; /* Light gray text for rules */
+}
